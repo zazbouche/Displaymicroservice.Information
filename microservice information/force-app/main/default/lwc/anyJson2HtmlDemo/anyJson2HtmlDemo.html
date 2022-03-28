@@ -1,0 +1,38 @@
+<template>
+    <!-- header section-->
+    <div class="slds-page-header">
+        <div class="slds-page-header__row">
+            <div class="slds-page-header__col-title">
+                <div class="slds-media">
+                    <div class="slds-media__figure">
+                        <lightning-icon icon-name="custom:custom11" title="custom11"></lightning-icon>
+                    </div>
+                    <div class="slds-media__body">
+                        <div class="slds-page-header__name">
+                            <div class="slds-page-header__name-title">
+                                <h1>
+                                    <span class="slds-page-header__title slds-truncate">Any-JSON2HTML Examples</span>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JSON Example -->
+    <div class="container">
+        <c-any-json2-html title="JSON Example" json={json}></c-any-json2-html>
+    </div>
+
+    <!-- Simple Array Example -->
+    <div class="container">
+        <c-any-json2-html title="Simple Array Example" json={simpleArray}></c-any-json2-html>
+    </div>
+
+    <!-- Array of JSON Example -->
+    <div class="container">
+        <c-any-json2-html title="Array of JSON Example" json={arrayOfJson}></c-any-json2-html>
+    </div>
+</template>

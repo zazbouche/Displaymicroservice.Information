@@ -1,0 +1,18 @@
+<template>
+    <lightning-card>
+        <h3 slot="title">
+            <lightning-icon icon-name="utility:connected_apps" size="small"></lightning-icon>
+                Information Compte 
+        </h3>
+        <div slot="footer">
+                
+        </div>
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-button label="Information Compte" onclick={getTheAccount}></lightning-button>
+        </div>
+
+        <div class="slds-p-around_medium lgc-bg" if:true={receivedMessage} style="position: relative;  width:80% ">
+            <c-any-json2-html  title="" json= {receivedMessage}  theme="slds"> </c-any-json2-html>
+        </div>   
+    </lightning-card>
+</template>
